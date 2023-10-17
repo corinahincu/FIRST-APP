@@ -1,16 +1,29 @@
 
-// main App component 
+import React, { Component } from "react";
 
-function App() {
+// main App component 
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>First React JS APP</h1>
+      </div>
+    );
+  }
+}
+
+export default App;
+
+/* function App() { */
   // below jsx syntax
-  return (
+/*   return (
     <div className="App">
       <h1> First React JS APP</h1>
     </div>
   );
 }
 
-export default App;
+export default App; */
 
 
 // element.innerHTML = ´ <div> </div>´  -> aceasta varianta nu se considera profesionista sa dai prin string structura, se pierde starea,renderingul e mult mai complicat
