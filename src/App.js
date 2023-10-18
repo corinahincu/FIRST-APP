@@ -1,17 +1,39 @@
-import React, { Component } from "react";
-import Button from './btn/Button'
+import Button from "./btn/Button";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Button label="Button One" color="red" /> 
-        <Button label="Button Two" color="green" />
-      </div>
-      // react.createElement(Button,...) . to ce scriem aici, se interpreteaza in props: label, color, etc
-    );
-  }
+/* function App(){
+  return (
+    <div>
+      <Button label="Button Two" color="red" />
+      <Button label="Button Two" color="green" />
+    </div>
+  );
+} */
+
+function App() {
+  const btn1 = <Button label="Button One" color="red" />;
+  console.dir(btn1);
+
+  return (
+    <div>
+      {btn1}
+      <Button label="Button Two" color="green" />
+    </div>
+  );
 }
+
+/* class App extends Component{
+  render(){
+    const btn1 = <Button label="Button One" color="red" />
+    console.dir(btn1)
+    return(
+      <div>
+        {btn1}
+        <Button label="Button Two" color="green"/>
+      </div>
+    )
+  }
+} */
+
 
 export default App;
 
